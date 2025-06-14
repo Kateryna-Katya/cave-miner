@@ -1,0 +1,203 @@
+/* Home */
+.home-section{
+    background-image: url("/img/hero/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 760px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
+.home-desk-text{
+    display: none;
+}
+.home-subtitle{
+    font-size: 48px;   
+    line-height: 1.25;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-top: 430px;
+    margin-bottom: 18px;
+}
+.home-mob-text{
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+@media only screen and (min-width: 1439px) {
+.home-section{
+    background-image: url("/img/hero/desk.png");
+    height: 810px;
+}
+.visually-hidden {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    font-family: "Changa One", sans-serif;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 1;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #ff9229;
+        -webkit-text-stroke: 4px #fff;
+        margin-top: 440px;
+}
+.home-subtitle{
+    display: none;
+}
+.home-mob-text{
+    display: none;
+}
+.home-desk-text{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 18px;
+}
+}
+/* About */
+.about-section{
+    background-image: url("/img/about/mob.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 1936px;
+}
+.about-title{
+    padding-bottom: 6px;
+    border-bottom: 2px solid #fff;
+    width: 200px;
+    margin-bottom: 30px;
+}
+.about-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.custom-navigation{
+    display: none;
+}
+.about-swiper-wrapper{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    gap: 24px;
+}
+@media only screen and (min-width: 1439px) {
+  .about-section{
+    background-image: url("/img/about/desk.png");
+    height: 960px;
+  }
+  .about-title {
+      width: 600px;
+      margin-bottom: 48px;
+      margin-top: 180px;
+  }
+  .about-text-wrapper{
+    width: 364px;
+    margin-left: 200px;
+    margin-bottom: 0;
+    height: 600px;
+    gap: 0;
+  }
+
+  
+  .about-swiper-container {
+      padding-bottom: 52px;
+      overflow: visible;
+      position: relative;
+      height: 600px;
+      width: 600px;
+      margin-left: 560px;
+      margin-top: -800px;
+  }
+
+  .about-swiper {
+      width: 412px;
+      margin: 0 auto;
+ 
+  }
+
+  .about-swiper-wrapper {
+      display: flex;
+      flex-direction: row;
+
+  }
+
+  .about-swiper .swiper-slide {
+      border-radius: 20px;
+      transition: transform 0.3s ease;
+      transform-origin: left center;
+  }
+  .about-img-one{
+    width: 502px;
+        height: 600px;
+  }
+.about-img-two{
+    width: 438px;
+        height: 580px;
+}
+.about-img-three{
+    width: 438px;
+    height: 562px;
+}
+  .custom-navigation {
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      z-index: 10;
+  } 
+
+  .custom-arrow {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+  }
+
+  .custom-pagination {
+      position: absolute;
+      left: 40%;
+      bottom: 0;
+      width: 160px;
+      height: 130px;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap:20px;
+       z-index: 1000;
+   }
+
+   .pagination-item {
+       width: 14px;
+       height: 14px;
+       border-radius: 50%;
+       border: 2px solid #fff;
+       background: transparent;
+       cursor: pointer;
+       transition: background-color 0.3s ease;
+   }
+
+   .pagination-item.active {
+       background-color: #fff !important;
+     }
+
+}
