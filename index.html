@@ -23,20 +23,57 @@
     <script type="module" crossorigin src="/cave-miner/index.js"></script>
     <link rel="modulepreload" crossorigin href="/cave-miner/assets/vendor-DvTbVb7G.js">
     <link rel="stylesheet" crossorigin href="/cave-miner/assets/vendor-BYi8b08d.css">
-    <link rel="stylesheet" crossorigin href="/cave-miner/assets/styles-CjBFgruL.css">
+    <link rel="stylesheet" crossorigin href="/cave-miner/assets/styles-DP4FauNr.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-   
+    <header class="header" id="site-header">
+  <div class="header-container container">
+    <a class="header-link" href="index.html#Home">Cave Miner: Clicker Game</a>
+    <button type="button" class="menu-button" aria-label="menu toggle">
+      <span class="icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 6H21V8H3V6ZM3 11H21V13H3V11ZM3 16H21V18H3V16Z" fill="white" />
+          </svg>
+      </span>
+    </button>
+    <nav class="nav ">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="links" href="index.html#Home">Home</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#About">About</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Features">Features</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#FAQ">FAQ</a>
+        </li>
+        <li class="navigation-item">
+          <a class="links" href="index.html#Reviews">Reviews</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>
-
+<!-- Mobile menu -->
+<div id="modalWindow" class="modal">
+  <ul class="menu-list">
+    <li><a class="menu-list-item" href="index.html#Home">Home</a></li>
+    <li><a class="menu-list-item" href="index.html#About">About</a></li>
+    <li>
+      <a class="menu-list-item" href="index.html#Features">Features</a>
+    </li>
+    <li><a class="menu-list-item" href="index.html#FAQ">FAQ</a></li>
+    <li><a class="menu-list-item" href="index.html#Reviews">Reviews</a></li>
+  </ul>
+</div>
 
     <main>
       <!-- Loads the specified .html file -->
       <!-- Home -->
-<section class="home-section">
+<section class="home-section" id="Home">
     <div class="container">
         <h1 class="visually-hidden">Cave Miner: Clicker Game</h1>
         <h2 class="home-subtitle">Magic World Match-3 RPG</h2>
@@ -45,7 +82,7 @@
     </div>
 </section>
 <!-- About -->
- <section class="about-section">
+ <section class="about-section" id="About">
     <div class="container">
         <h2 class="about-title">About</h2>
         <div class="about-text-wrapper">
@@ -90,7 +127,7 @@
     </div>
  </section>
 <!-- features -->
-<section class="features-section">
+<section class="features-section" id="Features">
     <div class="container">
         <h2 class="features-title">features</h2>
         <ul class="features-list">
@@ -123,7 +160,7 @@
     </div>
 </section>
 <!-- FAQ -->
-<section class="faq-section">
+<section class="faq-section" id="FAQ">
     <div class="container">
         <h2 class="faq-title">FAQ</h2>
         <ul class="faq-acc">
@@ -180,7 +217,7 @@
     </div>
 </section>
 <!-- reviews -->
-<section class="reviews-section">
+<section class="reviews-section" id="Reviews">
     <div class="container">
         <h2 class="reviews-title">reviews</h2>
         <p class="reviews-text">Our mission is to build a game you truly enjoy and want to return to every day. That’s why we’re continually improving
