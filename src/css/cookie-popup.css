@@ -1,0 +1,108 @@
+.cookie-popup {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 2px solid #ff9229;
+        border-radius: 8px;
+        padding: 32px 16px;
+    width: 374px;
+    height: auto;
+    z-index: 1200;
+    display: none;
+}
+
+.cookies-img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 12px;
+    display: block;
+}
+
+.cookie-class {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #242529;
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cookie-buttons {
+    margin: 32px auto 0;
+    width: 343px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-accept {
+    border-radius: 8px;
+        padding: 16px 20px;
+        width: 343px;
+        height: 56px;
+    box-shadow: 0 3px 12px 0 rgba(74, 58, 255, 0.18);
+        background: #19272a;
+    color: #fff;
+    padding: 16px 20px;
+    border: none;
+    font-family: "Changa One", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #fff;
+}
+
+.btn-decline {
+    border-radius: 8px;
+        padding: 14px 20px;
+        width: 343px;
+        height: 56px;
+        box-shadow: 0 4px 8px 0 rgba(74, 58, 255, 0.08);
+            background: #fff;
+            font-family: "Changa One", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.2;
+                color: #19272a;
+}
+
+
+@media screen and (min-width: 1439px) {
+    .cookie-popup {
+        width: 1430px;
+        padding: 32px;
+    }
+
+    .cookies-img {
+        float: left;
+        margin: 4px 20px 0;
+
+    }
+
+    .cookie-class {
+        font-size: 20px;
+        line-height: 1.2;
+        width: 640px;
+        text-align: left;
+        margin: 10px 0 0 20px;
+    }
+
+    .cookie-buttons {
+        display: flex;
+        text-align: left;
+        flex-direction: row;
+        margin: -50px 0 0 900px;
+    }
+
+    .btn-accept {
+        width:216px;
+    }
+
+    .btn-decline {
+        width: 109px;
+    } }
